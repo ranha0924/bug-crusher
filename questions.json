@@ -1,0 +1,32 @@
+{
+  "questions": [
+
+    { "id": 101, "type": "multiple", "difficulty": 1, "question": "HTML의 역할은?", "options": ["스타일", "구조", "데이터베이스", "서버"], "answer": 1 },
+    { "id": 102, "type": "multiple", "difficulty": 1, "question": "CSS의 역할은?", "options": ["구조", "스타일", "컴파일", "API"], "answer": 1 },
+    { "id": 103, "type": "multiple", "difficulty": 1, "question": "JavaScript는 주로 무엇을 담당하나요?", "options": ["동작/로직", "이미지 편집", "폰트 설치", "DNS"], "answer": 0 },
+    { "id": 104, "type": "text", "difficulty": 1, "question": "참/거짓 자료형(영어)은?", "answer": "boolean" },
+    { "id": 105, "type": "multiple", "difficulty": 1, "question": "변수 선언 키워드가 아닌 것은?(JS)", "options": ["let", "const", "var", "define"], "answer": 3 },
+    { "id": 106, "type": "text", "difficulty": 1, "question": "JS에서 배열 길이 속성 이름은?", "answer": "length" },
+    { "id": 107, "type": "multiple", "difficulty": 1, "question": "if문은 무엇을 할 때 쓰나요?", "options": ["반복", "조건 분기", "파일 저장", "네트워크"], "answer": 1 },
+    { "id": 108, "type": "multiple", "difficulty": 1, "question": "for문은 무엇을 할 때 쓰나요?", "options": ["반복", "조건 분기", "스타일", "컴파일"], "answer": 0 },
+
+ 
+    { "id": 201, "type": "multiple", "difficulty": 2, "question": "시간복잡도 O(n)은 무엇을 의미하나요?", "options": ["입력 2배면 시간 4배", "입력 2배면 시간 2배", "항상 1초", "랜덤"], "answer": 1 },
+    { "id": 202, "type": "multiple", "difficulty": 2, "question": "스택(Stack)에서 pop은 무엇인가요?", "options": ["맨 위 추가", "맨 위 제거", "맨 아래 제거", "정렬"], "answer": 1 },
+    { "id": 203, "type": "multiple", "difficulty": 2, "question": "재귀(recursion) 설명으로 맞는 것은?", "options": ["함수가 자기 자신을 호출", "함수 이름 바꾸기", "코드 복사", "무조건 빠름"], "answer": 0 },
+    { "id": 204, "type": "multiple", "difficulty": 2, "question": "JS에서 undefined는 보통 언제 나오나요?", "options": ["값이 할당되지 않은 변수", "문자열", "항상 0", "객체만"], "answer": 0 },
+    { "id": 205, "type": "multiple", "difficulty": 2, "question": "배열을 순회할 때 흔히 쓰는 메서드는?(JS)", "options": ["map", "compile", "render", "dns"], "answer": 0 },
+    { "id": 206, "type": "text", "difficulty": 2, "question": "JS에서 문자열을 숫자로 바꾸는 대표 함수(하나) 이름은?", "answer": "Number" },
+    { "id": 207, "type": "multiple", "difficulty": 2, "question": "해시(딕셔너리)의 장점은?", "options": ["탐색이 빠른 편", "무조건 정렬됨", "메모리 0", "항상 O(n^2)"], "answer": 0 },
+    { "id": 208, "type": "multiple", "difficulty": 2, "question": "클래스/객체의 목적에 가까운 것은?", "options": ["데이터와 기능 묶기", "CSS 꾸미기", "파일 압축", "GPU 가속"], "answer": 0 },
+
+    { "id": 301, "type": "multiple", "difficulty": 3, "question": "JS에서 이벤트 루프와 가장 관련 깊은 것은?", "options": ["Call Stack / Task Queue", "DNS / DHCP", "GPU / RAM", "HTML / CSS"], "answer": 0 },
+    { "id": 302, "type": "multiple", "difficulty": 3, "question": "클로저(closure) 설명으로 맞는 것은?", "options": ["함수가 외부 스코프 변수에 접근 가능", "함수가 항상 1회만 실행", "배열 복사", "타입 변환"], "answer": 0 },
+    { "id": 303, "type": "multiple", "difficulty": 3, "question": "REST API에서 PUT의 의미로 가장 가까운 것은?", "options": ["리소스 생성", "리소스 전체 교체/갱신", "리소스 일부 수정", "삭제"], "answer": 1 },
+    { "id": 304, "type": "multiple", "difficulty": 3, "question": "HTTP 상태코드 401은?", "options": ["Not Found", "Unauthorized", "Forbidden", "OK"], "answer": 1 },
+    { "id": 305, "type": "multiple", "difficulty": 3, "question": "Big-O에서 최악 시간복잡도를 쓰는 이유에 가까운 것은?", "options": ["항상 평균보다 정확", "상한선을 보장하려고", "코드를 짧게 하려고", "메모리 절약"], "answer": 1 },
+    { "id": 306, "type": "text", "difficulty": 3, "question": "JS에서 Promise의 3가지 상태 중 하나: pending / fulfilled / ____", "answer": "rejected" },
+    { "id": 307, "type": "multiple", "difficulty": 3, "question": "CORS가 필요한 이유로 가장 적절한 것은?", "options": ["브라우저의 보안 정책", "서버 속도 증가", "코드 압축", "데이터베이스 인덱싱"], "answer": 0 },
+    { "id": 308, "type": "multiple", "difficulty": 3, "question": "GC(가비지 컬렉션)와 가장 관련 있는 것은?", "options": ["메모리 자동 관리", "네트워크 암호화", "GPU 렌더링", "CSS 애니메이션"], "answer": 0 }
+  ]
+}
