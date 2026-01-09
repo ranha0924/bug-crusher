@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bug Crusher - 버그 사냥 미로 게임</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <header class="game-header">
+      <h1>BUG CRUSHER</h1>
+      <div class="game-stats">
+        <div class="stat">
+          <span class="stat-label">BUGS</span>
+          <span id="monsters-left" class="stat-value">0</span>
+        </div>
+        <div class="stat key-stat">
+          <span class="stat-label">KEY</span>
+          <span id="key-status" class="stat-value">LOCKED</span>
+        </div>
+      </div>
+    </header>
+    
+    <div class="maze-wrap">
+    <div id="maze" class="maze"></div>
+        </div>
+    <div class="game-controls">
+      <p class="desktop-hint">화살표 키로 이동하세요</p>
+
+      <button id="restart-btn" class="pixel-btn">RESTART</button>
+    </div>
+  </div>
+
+  <!-- 시작 안내 모달 -->
+  <div id="intro-modal" class="modal active">
+    <div class="modal-content intro-content">
+      <h2>🐛 BUG CRUSHER 🐛</h2>
+
+      <div class="story">
+        당신은 신입 개발자입니다.<br>
+        코드베이스에 버그들이 가득합니다!<br>
+        모든 버그를 잡고 탈출하세요!
+      </div>
+
+      <div class="instructions">
+        <p><span>🎮 조작:</span> 화살표 키로 이동</p>
+        <p><span>🐛 버그:</span> 버그와 만나면 코딩 문제 출제</p>
+        <p><span>💀 주의:</span> 문제를 틀리면 게임 오버!</p>
+        <p><span>🔑 열쇠:</span> 모든 버그를 잡으면 열쇠 등장</p>
+        <p><span>🚪 탈출:</span> 열쇠로 출구를 열고 탈출!</p>
+      </div>
+
+      <!-- ✅ 난이도 선택 -->
+      <div class="difficulty-box">
+        <div class="difficulty-title">난이도 선택</div>
+        <div class="difficulty-buttons">
+          <button class="diff-btn active" data-diff="1">하</button>
+          <button class="diff-btn" data-diff="2">중</button>
+          <button class="diff-btn" data-diff="3">상</button>
+        </div>
+        <div class="difficulty-hint" id="difficulty-hint">
+          하: 개발 입문자용 (기초 개념)
+        </div>
+      </div>
+
+      <button id="start-btn" class="pixel-btn">START GAME</button>
+    </div>
+  </div>
+
+  <!-- 문제 모달 -->
+  <div id="question-modal" class="modal">
+    <div class="modal-content">
+      <div class="monster-face" id="monster-face">🐛</div>
+      <h2>버그 발견!</h2>
+      <p id="question-text" class="question-text"></p>
+
+      <div id="options-container" class="options-container"></div>
+
+      <div id="text-answer-container" class="text-answer-container" style="display:none;">
+        <input type="text" id="text-answer" class="pixel-input" placeholder="답을 입력하세요" />
+        <button id="submit-text-btn" class="pixel-btn">제출</button>
+      </div>
+
+      <p id="result-message" class="result-message"></p>
+    </div>
+  </div>
+
+  <!-- 클리어 모달 -->
+  <div id="clear-modal" class="modal">
+    <div class="modal-content clear-content">
+      <h2>🎉 CLEAR! 🎉</h2>
+      <p>축하합니다! 모든 버그를 잡고 탈출했습니다!</p>
+      <button id="next-stage-btn" class="pixel-btn">다시 플레이</button>
+    </div>
+  </div>
+
+  <!-- 열쇠 필요 모달 -->
+  <div id="key-modal" class="modal">
+    <div class="modal-content key-content">
+      <div class="key-icon">🔑</div>
+      <h2>열쇠가 필요합니다!</h2>
+      <p>모든 버그를 잡아야 열쇠가 나타납니다.</p>
+      <button id="key-ok-btn" class="pixel-btn">확인</button>
+    </div>
+  </div>
+
+  <!-- 사망 모달 -->
+  <div id="death-modal" class="modal">
+    <div class="modal-content death-content">
+      <div class="skull">💀</div>
+      <h2>GAME OVER</h2>
+      <p>버그에게 패배했습니다...</p>
+      <button id="retry-btn" class="pixel-btn">다시 시작</button>
+    </div>
+  </div>
+
+  <!-- 열쇠 등장 모달 -->
+  <div id="key-appear-modal" class="modal">
+    <div class="modal-content key-content">
+      <div class="key-icon">🔑</div>
+      <h2>열쇠가 나타났습니다!</h2>
+      <p>출구로 향하세요!</p>
+      <button id="key-appear-ok-btn" class="pixel-btn">확인</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
