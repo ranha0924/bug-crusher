@@ -131,7 +131,7 @@ function setDifficulty(diff) {
   if (difficultyHint) {
     if (diff === 1) difficultyHint.textContent = '하: 개발 입문자용 (기초 개념)';
     if (diff === 2) difficultyHint.textContent = '중: 어느 정도 코딩한 사람용 (기본문법/응용)';
-    if (diff === 3) difficultyHint.textContent = '상: 개발자용 (CS/JS 심화/설계)';
+    if (diff === 3) difficultyHint.textContent = '상: 개발자용 (CSS/JS 심화/설계)';
   }
 }
 
