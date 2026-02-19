@@ -14,7 +14,17 @@ bug-crusher은 신입 개발자가 미로에서마주치는 버그들을 전부 
 
 ### 1️ **게임 설명 & 난이도 선택화면**
 
+<img width="641" height="583" alt="스크린샷 2026-02-19 135154" src="https://github.com/user-attachments/assets/f1beff22-1279-4e9c-a518-0cfa3887f96b" />
+
 ### 2️ **미로화면**
+
+<img width="635" height="586" alt="스크린샷 2026-02-19 135207" src="https://github.com/user-attachments/assets/90e4f33c-b222-4dcc-af59-e5c9458eab0e" />
+
+<img width="630" height="584" alt="화면 캡처 2026-02-19 135244" src="https://github.com/user-attachments/assets/51fe7f29-f71f-4409-8dd0-cc997cf51fb6" />
+
+<img width="635" height="584" alt="화면 캡처 2026-02-19 135311" src="https://github.com/user-attachments/assets/7550aeb8-60d1-4b08-a374-54777bb9d1f8" />
+
+<img width="644" height="585" alt="화면 캡처 2026-02-19 135332" src="https://github.com/user-attachments/assets/3d0aa0fd-387f-477c-bc0d-caafffc3e496" />
 
 ---
 
